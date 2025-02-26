@@ -40,6 +40,7 @@ header {
 }
 .navigation a:hover {
     color: #fff;
+    transform: scale(1.2);
 }
 .btn-talk {
     color: #fff;
@@ -81,10 +82,10 @@ header {
 }
 .Home img {
     position: fixed;
-    bottom: 10%;
-    left: 2%;
+    bottom: -4%;
+    left: -0.5%;
     scale: 85%;
-    filter: blur(8px);
+    
 }    
 .content {
     color: #555;
@@ -145,7 +146,7 @@ header {
 }
 .social-icons {
     position: absolute;
-    bottom: -477px;
+    bottom: -610px;
 }
 .social-icons a {
     display: inline-block;
@@ -160,8 +161,11 @@ header {
     transition: .3s;
     text-align: center;
 }
+.social-icons a {
+    transition: transform 0.3s ease-in-out;
+}
 .social-icons a:hover {
-    transform: translate(-5px);
+    transform: translate(-1px) scale(1.2);
 }
 .social-icons a i {
     color: #fff;
@@ -173,3 +177,89 @@ justify-content: center;
 align-items: center;
 width: 140%;
 }
+@media only screen and (max-width: 480px) {
+    header {
+      padding: 15px 20px;
+    }
+    .logo {
+      font-size: 1.5em;
+    }
+    .navigation {
+      flex-direction: column;
+    }
+    .navigation a {
+      margin-left: 0;
+      margin-bottom: 10px;
+    }
+    .main-image {
+      width: 100%;
+    }
+    .Home {
+      padding: 20px 10px;
+    }
+    .content h2 {
+      font-size: 2em;
+    }
+    .content h4 {
+      font-size: 1em;
+    }
+    .content p {
+      font-size: 0.8em;
+    }
+    .social-icons {
+      bottom: -300px;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    header {
+      padding: 20px 30px;
+    }
+    .logo {
+      font-size: 2em;
+    }
+    .main-image {
+      width: 80%;
+    }
+    .Home {
+      padding: 30px 20px;
+    }
+    .content h2 {
+      font-size: 2.5em;
+    }
+    .content h4 {
+      font-size: 1.2em;
+    }
+    .content p {
+      font-size: 1em;
+    }
+    .social-icons {
+      bottom: -350px;
+    }
+  }
+  @media only screen and (max-width: 1024px) {
+    header {
+      padding: 25px 40px;
+    }
+    .logo {
+      font-size: 2.5em;
+    }
+    .main-image {
+      width: 70%;
+    }
+    .Home {
+      padding: 40px 30px;
+    }
+    .content h2 {
+      font-size: 3em;
+    }
+    .content h4 {
+      font-size: 1.5em;
+    }
+    .content p {
+      font-size: 1.2em;
+    }
+    .social-icons {
+      bottom: -400px;
+    }
+  }
+  

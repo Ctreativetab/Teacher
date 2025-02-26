@@ -127,7 +127,7 @@ header {
     text-align: center;
 }
 .social-icons a:hover {
-    transform: translate(-5px);
+    transform: scale(1.2);
 }
 .social-icons a i {
     color: #fff;
